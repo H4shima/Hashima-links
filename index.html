@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Roboto:wght@300;500;700&display=swap"
+                                                                                    rel="stylesheet">
+    <link rel="shortcut icon" href="icons/code.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./css/index.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            VANTA.BIRDS({
+                el: "#vanta",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: true,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color1: 0x875d5d,
+                color2: 0x989aa0,
+                wingSpan: 40.00,
+                separation: 100.00,
+                alignment: 77.00,
+                cohesion: 5.00,
+                quantity: 3.00,
+                backgroundAlpha: 0.0
+            })
+            setTimeout(() => {
+                const main = document.querySelector('main')
+                main.style.opacity = 1
+                main.style.filter = 'blur(0px)'
+            }, 1000)
+
+        })
+    </script>
+    <title>Hashima - Links</title>
+</head>
+
+<body>
+    <div id="vanta"></div>
+    <main>
+        <header>
+            <div class="title_img">
+
+            </div>
+            <h1>Hashima</h1>
+            <div class="links">
+                <ul>
+                    <li>
+                        <a href="https://t.me/Hashimas">
+                            <img src="icons/telegram.svg" alt="Telegram">
+                            Telegram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://vk.com/sleepzy">
+                            <img src="icons/vk-com.svg" alt="VK">
+                            VKontakte
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:raikangreat@gmail.com">
+                            <img src="icons/gmail.svg" alt="mail">
+                            Send email
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+    </main>
+</body>
+
+</html>
